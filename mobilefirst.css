@@ -1,0 +1,57 @@
+/* Mobile First: Estilos base para dispositivos móviles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Diseño de cuadrícula */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Media Queries para pantallas más anchas */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Estilos para impresión */
+@media print {
+    body {
+        color: #000;
+        background-color: #fff;
+    }
+    
+    header, footer {
+        background-color: #fff;
+        color: #000;
+    }
+}

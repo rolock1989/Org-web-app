@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organización Grinpiz</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="mediascreen.css">
+    <link rel="stylesheet" href="Search.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/LOGO WEB.png" class="imagen" alt="logo empresa" class="logo-img">
+        </div>
+        <div class="titulo1">
+            <h1>Organización Grinpiz</h1>
+        </div>
+    </header>
+    <div class="search-container">
+        <input type="text" id="eventInput" placeholder="Buscar eventos">
+        <button onclick="searchEvents()">Buscar</button>
+    </div>
+
+<main>
+    <nav>
+        <ul class="flex-container">
+            <li class="flex-item"><a href="Registro_proyecto.html">Registrar proyecto</a></li>
+            <li class="flex-item"><a href="donar.php">Donar</a></li>
+            <li class="flex-item"><a href="Registro_evento.html">Registro evento</a></li>
+            <li class="flex-item"><a href="Login.html">Login</a></li>
+            <li class="flex-item"><li class="flex-item"><a href="inicio.html">Inicio</a></li>
+            <li class="flex-item"><a href="quienessomos.html">Quienes Somos</a></li>
+            <li class="flex-item"><a href="actividades.html">Actividades</a></li>
+            <li class="flex-item"><a href="eventos.html">Eventos</a></li>
+            <li class="flex-item"><a href="Temasdeinteres.html">Temas de interés</a></li>
+            <li class="flex-item"><a href="https://es.wikipedia.org/wiki/Cambio_clim%C3%A1tico" target="_blank">Wikipedia: Cambio Climático</a></li>
+            <li class="flex-item"><a href="Registro.html">Registrate</a></li>
+        </ul>
+        </nav>
+        
+        <h1>Registrar Proyecto</h1>
+        <form action="insertar_proyecto.php" method="post" onsubmit="return validarFormulario();">
+            <label for="nombre">Nombre del Proyecto:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+    
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea><br>
+    
+            <label for="presupuesto">Presupuesto:</label>
+            <input type="number" id="presupuesto" name="presupuesto" required><br>
+    
+            <label for="fecha_inicio">Fecha de Inicio:</label>
+            <input type="date" id="fecha_inicio" name="fecha_inicio" required><br>
+    
+            <label for="fecha_fin">Fecha de Fin:</label>
+            <input type="date" id="fecha_fin" name="fecha_fin"><br>
+    
+            <button type="submit">Registrar Proyecto</button>
+        </form>
+    
+        <script>
+        function validarFormulario() {
+
+            const nombre = document.getElementById('nombre').value;
+            if (nombre.length < 3) {
+                alert("El nombre debe tener al menos 3 caracteres.");
+                return false;
+            }
+            return true;
+        }
+        </script>
+</main>
+<footer>
+    <p>© 2024 Organización Ambiental. Todos los derechos reservados.</p>
+</footer>
+
+</html>

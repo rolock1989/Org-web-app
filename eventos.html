@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organización Grinpiz</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="eventos.css">
+    <link rel="stylesheet" href="Search.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/LOGO WEB.png" class="imagen" alt="logo empresa" class="logo-img">
+        </div>
+        <div class="titulo1">
+            <h1>Organización Grinpiz</h1>
+        </div>
+    </header>
+    <div class="search-container">
+        <input type="text" id="eventInput" placeholder="Buscar eventos">
+        <button onclick="searchEvents()">Buscar</button>
+    </div>
+
+    <div id="results-container">
+    </div>
+
+    <div id="projects-container">
+    </div>
+
+    <div id="notifications-container">
+    </div>
+<main>
+    <nav>
+        <ul class="flex-container">
+            <li class="flex-item"><a href="donar.php">Donar</a></li>
+            <li class="flex-item"><a href="Registro_evento.html">Registro evento</a></li>
+            <li class="flex-item"><a href="Login.html">Login</a></li>
+            <li class="flex-item"><li class="flex-item"><a href="inicio.html">Inicio</a></li>
+            <li class="flex-item"><a href="quienessomos.html">Quienes Somos</a></li>
+            <li class="flex-item"><a href="actividades.html">Actividades</a></li>
+            <li class="flex-item"><a href="eventos.html">Eventos</a></li>
+            <li class="flex-item"><a href="Temasdeinteres.html">Temas de interés</a></li>
+            <li class="flex-item"><a href="https://es.wikipedia.org/wiki/Cambio_clim%C3%A1tico" target="_blank">Wikipedia: Cambio Climático</a></li>
+            <li class="flex-item"><a href="Registro.html">Registrate</a></li>
+        </ul>
+        </nav>
+
+    <section id="eventos">
+        <h2>Próximos Eventos</h2>
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Nombre del Evento</th>
+                    <th>Lugar</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Semana de la reforestación</td>
+                    <td>Auditorio Municipal</td>
+                    <td>05 de julio de 2024</td>
+                    <td>10:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Feria de la sostenibilidad</td>
+                    <td>Río Claro</td>
+                    <td>22 de septiembre de 2024</td>
+                    <td>9:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Día Mundial de la Limpieza de Playas</td>
+                    <td>Muelle Municipal</td>
+                    <td>05 de octubre de 2024</td>
+                    <td>2:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Ciclo de Conferencias sobre Cambio Climático</td>
+                    <td>Centro Comunitario</td>
+                    <td>15 de noviembre de 2024</td>
+                    <td>2:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Maratón Ecológico</td>
+                    <td>Plaza de armas</td>
+                    <td>5 de septiembre de 2024</td>
+                    <td>2:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="actividades">
+        <ul>
+               <h3><span class="fuentes">Semana de la Reforestación (Julio 2024)</span> </h3>
+
+               <li> 
+                <p>Un evento comunitario de una semana donde voluntarios se unirán para plantar árboles en áreas urbanas y rurales.</p>
+                <li>
+                    <p>Incluye talleres sobre la importancia de los árboles y cómo cuidarlos.</p>
+                </li>
+
+                <h3><span class="fuentes">Feria de la Sostenibilidad (Septiembre 2024)</span></h3>
+
+                <li>
+                <p>Una feria abierta al público con stands de tecnologías limpias, productos ecológicos y charlas educativas sobre prácticas sostenibles.</p>
+                <li>
+                    <p>Contará con la participación de empresas locales, ONGs y expertos en medio ambiente.</p>
+                </li>
+            </li>
+
+            <h3> <span class="fuentes">Día Mundial de la Limpieza de Playas (Octubre 2024)</span></h3>
+
+            <li>
+                <p>Una jornada de limpieza de playas y costas, en la que voluntarios recolectarán desechos y residuos para su correcta disposición.</p>
+
+            <li>
+            <p>Habrá actividades educativas sobre la contaminación marina y la importancia de mantener las playas limpias.</p>
+
+            </li>
+
+            <h3><span class="fuentes">Ciclo de Conferencias sobre Cambio Climático (Noviembre 2024)</span></h3>
+
+            <li>
+                <p>Serie de conferencias y paneles de discusión con expertos nacionales e internacionales sobre los efectos del cambio climático y las medidas para mitigarlo.</p>
+                <li>
+                <p>Dirigido a estudiantes, profesionales y público en general interesado en el tema.</p>
+            </li>
+
+            <h3><span class="fuentes">Maratón Ecológico (Diciembre 2024)</span></h3>
+
+            <li>
+               <p>Un maratón y caminata ecológica con el objetivo de recaudar fondos para proyectos de conservación.</p>
+            <li>
+               <p>El evento incluirá actividades familiares, concursos y puestos de información sobre conservación ambiental.</p>
+            </li>
+        </ul>
+    </section>
+</main>
+    <footer>
+        <p>© 2024 Organización Ambiental. Todos los derechos reservados.</p>
+    </footer>    
+</body>
+</html>

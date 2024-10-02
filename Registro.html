@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organización Grinpiz</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="Search.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/LOGO WEB.png" class="imagen" alt="logo empresa" class="logo-img">
+        </div>
+        <div class="titulo1">
+            <h1>Organización Grinpiz</h1>
+        </div>
+    </header>
+    <div class="search-container">
+        <input type="text" id="eventInput" placeholder="Buscar eventos">
+        <button onclick="searchEvents()">Buscar</button>
+    </div>
+
+    <div id="results-container">
+    </div>
+
+    <div id="projects-container">
+    </div>
+
+    <div id="notifications-container">
+    </div>
+<main>
+    <nav>
+        <ul class="flex-container">
+            <li class="flex-item"><a href="donar.php">Donar</a></li>
+            <li class="flex-item"><a href="Registro_evento.html">Registro evento</a></li>
+            <li class="flex-item"><a href="Login.html">Login</a></li>
+            <li class="flex-item"><li class="flex-item"><a href="inicio.html">Inicio</a></li>
+            <li class="flex-item"><a href="quienessomos.html">Quienes Somos</a></li>
+            <li class="flex-item"><a href="actividades.html">Actividades</a></li>
+            <li class="flex-item"><a href="eventos.html">Eventos</a></li>
+            <li class="flex-item"><a href="Temasdeinteres.html">Temas de interés</a></li>
+            <li class="flex-item"><a href="https://es.wikipedia.org/wiki/Cambio_clim%C3%A1tico" target="_blank">Wikipedia: Cambio Climático</a></li>
+            <li class="flex-item"><a href="Registro.html">Registrate</a></li>
+        </ul>
+        </nav>
+    <section id="registro-usuarios">
+        <h2>Registro de Nuevos Usuarios</h2>
+        <form action="/register" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br><br>
+            <label for="tipo-documento">Tipo de Documento:</label>
+            <select id="tipo-documento" name="tipo-documento" required>
+                <option value="dni">DNI</option>
+                <option value="rut">RUT</option>
+                <option value="cedula">Cédula</option>
+                <option value="pasaporte">Pasaporte</option>
+            </select>
+            <br><br>
+            <label for="numero-documento">Número de Documento:</label>
+            <input type="text" id="numero-documento" name="numero-documento" required>
+            <br><br>
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            <br><br>
+            <label>Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="sexo" value="femenino" required>
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="prefieronodecir" name="sexo" value="prefieronodecir" required>
+            <label for="prefieronodecir">Prefiero no decir</label>
+            <br><br>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <br><br>
+            <label for="telefono">Teléfono Móvil:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <br><br>
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="3" cols="50"></textarea>
+            <br><br>
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+</main>
+    <footer>
+        <p>© 2024 Organización Ambiental. Todos los derechos reservados.</p>
+    </footer>
+    
+    </html>

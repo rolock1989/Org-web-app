@@ -1,0 +1,35 @@
+#temas-de-interes {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #dff7d1;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.imagenes img {
+    width: 30%;
+    height: 50%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #f9f9f9;
+}
+
+.video{
+    width: 45%;
+    height: 50%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+audio {
+    width: 60%;
+    margin-top: 20px;
+}

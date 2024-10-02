@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organización Grinpiz</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="temasdeinteres.css">
+    <link rel="stylesheet" href="Search.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/LOGO WEB.png" class="imagen" alt="logo empresa" class="logo-img">
+        </div>
+        <div class="titulo1">
+            <h1>Organización Grinpiz</h1>
+        </div>
+    </header>
+    <div class="search-container">
+        <input type="text" id="eventInput" placeholder="Buscar eventos">
+        <button onclick="searchEvents()">Buscar</button>
+    </div>
+
+    <div id="results-container">
+    </div>
+
+    <div id="projects-container">
+    </div>
+
+    <div id="notifications-container">
+    </div>
+<main>
+     <nav>
+        <ul class="flex-container">
+            <li class="flex-item"><a href="donar.php">Donar</a></li>
+            <li class="flex-item"><a href="Registro_evento.html">Registro evento</a></li>
+            <li class="flex-item"><a href="Login.html">Login</a></li>
+            <li class="flex-item"><li class="flex-item"><a href="inicio.html">Inicio</a></li>
+            <li class="flex-item"><a href="quienessomos.html">Quienes Somos</a></li>
+            <li class="flex-item"><a href="actividades.html">Actividades</a></li>
+            <li class="flex-item"><a href="eventos.html">Eventos</a></li>
+            <li class="flex-item"><a href="Temasdeinteres.html">Temas de interés</a></li>
+            <li class="flex-item"><a href="https://es.wikipedia.org/wiki/Cambio_clim%C3%A1tico" target="_blank">Wikipedia: Cambio Climático</a></li>
+            <li class="flex-item"><a href="Registro.html">Registrate</a></li>
+        </ul>
+    </nav>
+
+    <section id="temas-de-interes">
+        <h2>Temas de Interés: Cambio Climático</h2>
+        <p>El cambio climático se refiere a las variaciones a largo plazo en los patrones climáticos promedio del planeta. Esto incluye el aumento de la temperatura global, los cambios en las precipitaciones y el aumento de eventos climáticos extremos.</p>
+        <h3><span class="fuentes"> Galería de Imágenes </span></h3>
+
+        <section class="grid-item">
+        <div class="imagenes">
+        <img src="Imagenes/Cambio-climatico.jpeg" Class="imagen" alt="Imagen sobre el cambio climático" width="300">
+        <img src="Imagenes/cambio-climatico1.jpg" class="imagen" alt="Imagen sobre el cambio climático" width="300">
+        <img src="Imagenes/Cambio-climatico2.jpg" class="imagen" alt="Imagen sobre el cambio climático" width="300">
+        </div>
+    </section>
+
+        <section class="grid-item">
+        <div class="video">
+            <h3><span class="fuentes"> Videos Relacionados</span></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/miEJI0XQiN4?si=dohd6z3F6Z7pDkgF" title="YouTube video player" frameborder="300" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </section>
+
+
+        <h3><span Class="fuentes"> Audio Informativo </span></h3>
+        <audio controls>
+            <source src="Audios/Cambio-climatico.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+    </section>
+</main>
+    <footer>
+        <p>© 2024 Organización Ambiental. Todos los derechos reservados.</p>
+    </footer>
+    
+    </body>
+    </html>
